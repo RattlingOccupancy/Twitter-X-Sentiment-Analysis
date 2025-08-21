@@ -2,6 +2,13 @@
 
 This project analyzes recent tweets for a given topic and visualizes the distribution of emotions such as joy, sadness, fear, anger, surprise, neutral, disgust, and shame.
 
+
+
+## 🎥 Demo Video
+[▶ Watch the demo](./.assets/video.mp4)
+
+
+
 The project uses:
 - **Python (Flask)** backend to serve the UI and run ML inference.
 - A pre-trained **scikit-learn model** (`trained_model.sav`) with TF-IDF (`tfidf_vectorizer.sav`) and a label encoder (`label_encoder.sav`).

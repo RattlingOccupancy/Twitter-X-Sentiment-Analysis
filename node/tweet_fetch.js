@@ -3,9 +3,14 @@ const fs = require('fs');
 const path = require('path');
 const franc = require('franc');
 
-// store all available api keys here
-const apiKeys = ["a2R0PUNrZFJxMmJFNXl1REFLbHJxS0p4d0NZY0U3aHVLc2JLT2VRbUphOVY7YXV0aF90b2tlbj03ZjhlYzBlZGFhZWNiZjZlMWNkMjIwYjM0ZDBlZDY0YTU2MzkxM2U5O2N0MD1mYTg3OWI0YTI1OTk1N2MxYTYyZjFjYTI1ODkxOWVjOWZlZjEzOGQ2YTZmMTgzMDMwNjczMDFkY2UwOTkyZDlkNWFmNWRkZmFkZWM4NDVjNTI5YTc1Y2VlOTg4ZDZkOGRmYjk0OWFiZTE0Nzg3MzRkMTIzMjUwNmM0Yjg5MGVlMGNjZjkxYzc5MTcyYzI5NmM3MzA0NDM4MDRhMjViYmY0O3R3aWQ9dSUzRDE2NzE0MzAzMDg4NzE0MDU1Njg7"];
 
+
+// store all available api keys here (add multiple for better rotation)
+const apiKeys = [
+    "api_keys"
+];
+
+// helper: create a rettiwt instance using a random api key and random delay
 function createRandomRettiwt() {
     const randomKey = apiKeys[Math.floor(Math.random() * apiKeys.length)];
     return new Rettiwt({
