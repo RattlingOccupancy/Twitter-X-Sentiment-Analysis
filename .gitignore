@@ -1,0 +1,9 @@
+# ignore node modules
+node/node_modules/
+
+# ignore node package files
+node/package.json
+node/package-lock.json
+
+# ignore python cache
+python code/__pycache__/

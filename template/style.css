@@ -1,0 +1,663 @@
+:root {
+    --primary: #00DBDE;
+    --primary-rgb: 0, 219, 222;
+  
+    --primary-glow: rgba(0, 219, 222, 0.6);
+    --primary-dark: #00a4a6;
+    --secondary: #FC00FF;
+    --secondary-rgb: 252, 0, 255;
+   
+    --secondary-glow: rgba(252, 0, 255, 0.6);
+    --background: #0c0c16;
+    --card-bg: rgba(25, 25, 35, 0.8);
+    --text: #E6E6FA;
+    --error: #FF2D55;
+    --error-rgb: 255, 45, 85;
+    
+    --success: #4CFF4C;
+    --success-rgb: 76, 255, 76;
+   
+    --neutral: #9696A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+canvas#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-shadow:
+        0 0 7px var(--primary-glow),
+        0 0 10px var(--primary-glow),
+        0 0 21px var(--primary-glow);
+    color: var(--text);
+}
+
+.logo svg {
+    filter: drop-shadow(0 0 10px var(--primary-glow));
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px var(--primary-glow);
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.description {
+    color: var(--neutral);
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.search-box {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow:
+        0 0 10px rgba(0, 219, 222, 0.2),
+        0 0 20px rgba(0, 219, 222, 0.1);
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-box:hover {
+    box-shadow:
+        0 0 15px var(--primary-glow),
+        0 0 30px var(--primary-glow);
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px 0 0 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+    background-color: rgba(12, 12, 22, 0.8);
+    color: var(--text);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow:
+        0 0 0 2px var(--primary-glow),
+        inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group:hover input {
+    box-shadow:
+        0 0 5px var(--primary-glow),
+        inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: var(--text);
+    border: none;
+    border-radius: 0 30px 30px 0;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s;
+    z-index: -1;
+}
+
+button:hover:before {
+    left: 100%;
+}
+
+button:hover {
+    box-shadow:
+        0 0 10px var(--primary-glow),
+        0 0 20px var(--primary-glow);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.loading {
+    text-align: center;
+    margin: 40px 0;
+    display: none;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(0, 219, 222, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary);
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.results {
+    display: none;
+ 
+    background: linear-gradient(180deg, rgba(30, 30, 45, 0.88), rgba(22, 22, 35, 0.88));
+    border-radius: 12px;
+    padding: 25px;
+   
+    box-shadow:
+        0 0 12px rgba(var(--secondary-rgb), 0.15),
+        0 0 25px rgba(var(--secondary-rgb), 0.1),
+        0 8px 25px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+   
+    border: 1px solid rgba(var(--secondary-rgb), 0.3);
+    transition: all 0.3s ease;
+}
+
+.results:hover {
+    /* Enhance hover for results box as well */
+    box-shadow:
+        0 0 18px rgba(var(--secondary-rgb), 0.3),
+        0 0 35px rgba(var(--secondary-rgb), 0.2),
+        0 10px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(var(--secondary-rgb), 0.5);
+}
+
+.results-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hashtag {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(252, 0, 255, 0.3);
+}
+
+.tweet-count {
+    color: var(--neutral);
+    font-size: 1rem;
+}
+
+.sentiment-summary {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 15px;
+    
+    margin-bottom: 30px;
+}
+
+.sentiment-card {
+    flex: 1;
+    
+    min-width: 130px;
+    padding: 20px 15px;
+   
+    border-radius: 10px;
+  
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    background: linear-gradient(145deg, rgba(40, 40, 55, 0.75), rgba(25, 25, 40, 0.75));
+    
+    border: 1px solid rgba(var(--primary-rgb), 0.25);
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.sentiment-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    
+    box-shadow: 0 8px 25px rgba(var(--primary-rgb), 0.2),
+        0 0 15px rgba(var(--primary-rgb), 0.3);
+    border-color: rgba(var(--primary-rgb), 0.5);
+}
+
+.sentiment-card.positive {
+    color: var(--success);
+    box-shadow: 0 0 15px rgba(76, 255, 76, 0.2);
+}
+
+.sentiment-card.positive:hover {
+    box-shadow: 0 0 20px rgba(76, 255, 76, 0.4);
+}
+
+.sentiment-card.negative {
+    color: var(--error);
+    box-shadow: 0 0 15px rgba(255, 45, 85, 0.2);
+}
+
+.sentiment-card.negative:hover {
+    box-shadow: 0 0 20px rgba(255, 45, 85, 0.4);
+}
+
+.percent {
+    font-size: 2.2rem;
+    
+    font-weight: bold;
+    margin: 8px 0 12px 0;
+    
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary-glow), 0 0 5px var(--primary);
+}
+
+.count {
+    font-size: 0.85rem;
+    
+    color: var(--neutral);
+    
+    opacity: 0.9;
+    
+    line-height: 1.3;
+}
+
+.dominant-sentiment {
+    background-color: rgba(25, 25, 35, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 219, 222, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+    align-self: center; 
+}
+
+
+.dominant-sentiment:hover {
+    box-shadow: 0 0 20px rgba(0, 219, 222, 0.4);
+    transform: scale(1.02);
+}
+
+
+
+.chart-container {
+    height: 250px;
+    position: relative;
+    margin: 40px 0 30px 0; 
+    padding: 20px;
+    border-radius: 10px; 
+    
+    background-color: rgba(var(--background), 0.5); 
+    border: 1px solid rgba(var(--primary-rgb), 0.15);
+    
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.4), 0 0 10px rgba(var(--primary-rgb),0.1); 
+}
+
+.chart-bar {
+    position: absolute;
+    bottom: 40px; 
+    width: 38%; 
+    transition: height 1.2s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                background 0.4s ease,
+                box-shadow 0.4s ease;
+    border-radius: 6px 6px 0 0; 
+    border: 1px solid transparent; 
+    border-bottom: none;
+}
+
+.positive-bar {
+    left: 8%; 
+    background: linear-gradient(to top, var(--success), color-mix(in srgb, var(--success) 50%, black));
+    box-shadow: 0 0 12px rgba(var(--success-rgb), 0.3), 
+                inset 0 2px 5px rgba(255,255,255,0.1); 
+}
+
+.negative-bar {
+    right: 8%; /* Spacing from edge */
+    background: linear-gradient(to top, var(--error), color-mix(in srgb, var(--error) 50%, black));
+    box-shadow: 0 0 12px rgba(var(--error-rgb), 0.3),
+                inset 0 2px 5px rgba(255,255,255,0.1); 
+}
+
+.chart-bar:hover {
+    filter: brightness(1.15);
+    transform: scaleY(1.02);
+    transform-origin: bottom;
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 0 20px currentColor, 
+                inset 0 2px 8px rgba(255,255,255,0.15);
+}
+
+.chart-label {
+    position: absolute;
+    bottom: 8px; /* Adjusted position */
+    text-align: center;
+    width: 38%; /* Match bar width */
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.positive-label {
+    left: 8%; /* Match bar position */
+    color: color-mix(in srgb, var(--success) 80%, white); /* Brighter label */
+    text-shadow: 0 0 6px rgba(var(--success-rgb), 0.6);
+}
+
+.negative-label {
+    right: 8%; /* Match bar position */
+    color: color-mix(in srgb, var(--error) 80%, white); /* Brighter label */
+    text-shadow: 0 0 6px rgba(var(--error-rgb), 0.6);
+}
+
+.chart-label:hover {
+    /* Make labels slightly more prominent on hover, could match bar hover */
+    filter: brightness(1.2);
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--neutral);
+    font-size: 0.9rem;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.error-message {
+    display: none;
+    background-color: rgba(255, 45, 85, 0.15);
+    color: var(--error);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 45, 85, 0.2);
+    border: 1px solid rgba(255, 45, 85, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 45, 85, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(255, 45, 85, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 15px rgba(255, 45, 85, 0.2);
+    }
+}
+
+.glow-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y),
+            rgba(0, 219, 222, 0.15) 0%,
+            rgba(0, 219, 222, 0) 50%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.search-box:hover .glow-effect {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .sentiment-summary {
+        flex-direction: column;
+    }
+
+    .chart-bar,
+    .chart-label {
+        width: 40%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .search-box,
+    .results {
+        padding: 20px;
+    }
+}
+
+/* ... (previous :root and other styles remain) ... */
+
+/* Layout for results content */
+.results-content-wrapper {
+    display: flex;
+    gap: 25px; /* Space between left and right panels */
+    margin-top: 20px;
+}
+
+.results-left-panel {
+    flex: 1.2; /* Give slightly more space to cards, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between card summary and dominant emotion */
+}
+
+.results-right-panel {
+    flex: 0.8; /* Space for graphs */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Adjust sentiment summary to ensure cards take available width */
+.sentiment-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* margin-bottom: 0; Remove bottom margin as gap is handled by parent flex */
+}
+
+.sentiment-card {
+    flex-grow: 1; /* Allow cards to grow */
+    flex-basis: calc(50% - 10px); /* Aim for 2 cards per row, adjust for gap */
+    min-width: 120px; /* Prevent cards from becoming too narrow */
+    /* ... other card styles from previous suggestions ... */
+    background: linear-gradient(145deg, rgba(40, 40, 55, 0.75), rgba(25, 25, 40, 0.75));
+    border: 1px solid rgba(var(--primary-rgb), 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    border-radius: 8px;
+}
+.sentiment-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 7px 20px rgba(var(--primary-rgb), 0.15), 
+                0 0 10px rgba(var(--primary-rgb), 0.25);
+    border-color: rgba(var(--primary-rgb), 0.4);
+}
+
+.percent {
+    font-size: 1.8rem; /* Adjusted size for potentially smaller cards */
+    color: var(--primary);
+    text-shadow: 0 0 8px var(--primary-glow);
+    margin-bottom: 8px;
+}
+
+.count {
+    font-size: 0.8rem;
+    color: var(--neutral);
+    opacity: 0.9;
+}
+
+
+/* Dominant sentiment styling (if it was moved or needs adjustment) */
+.dominant-sentiment {
+    /* ... existing styles ... */
+    margin-top: auto; /* Pushes to bottom if left panel has extra space */
+}
+
+
+/* Main chart container - ensure it fits in the right panel */
+.chart-container {
+    /* ... existing styles ... */
+    height: 200px; /* Potentially reduce height if space is an issue */
+    margin: 0 0 20px 0; /* Remove top margin, bottom margin for spacing */
+}
+
+
+/* Individual Emotion Chart Styles */
+.individual-emotion-chart-container {
+    background-color: rgba(var(--card-bg), 0.9);
+    border: 1px solid rgba(var(--primary-rgb), 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.individual-emotion-title {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px var(--primary-glow);
+}
+
+.individual-bar-wrapper {
+    height: 150px; /* Adjust as needed */
+    background-color: rgba(var(--background), 0.3);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end; /* Bar grows from bottom */
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(var(--text), 0.1);
+}
+
+.individual-emotion-bar {
+    width: 50%; /* Width of the single bar */
+    background: linear-gradient(to top, var(--secondary), color-mix(in srgb, var(--secondary) 60%, var(--primary)));
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 10px rgba(var(--secondary-rgb), 0.4), 0 0 15px rgba(var(--primary-rgb), 0.2);
+    transition: height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth height transition */
+}
+.individual-emotion-bar:hover {
+    filter: brightness(1.1);
+}
+
+.individual-emotion-percentage {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+
+/* Responsive adjustments for the new layout */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .results-content-wrapper {
+        flex-direction: column;
+    }
+    .results-left-panel, .results-right-panel {
+        flex-basis: auto; /* Reset flex-basis for column layout */
+        width: 100%;
+    }
+    .sentiment-card {
+        flex-basis: calc(50% - 8px); /* Maintain 2 cards per row on smaller screens if possible */
+    }
+}
+
+@media (max-width: 480px) {
+    .sentiment-card {
+        flex-basis: 100%; /* Single card per row on very small screens */
+    }
+}
+
+.centered-header {
+    justify-content: center !important;
+}
