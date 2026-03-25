@@ -1,4 +1,5 @@
 # import required libraries
+import os
 from flask import Flask, request, jsonify, render_template
 import json
 from pathlib import Path
@@ -6,15 +7,18 @@ from pathlib import Path
 # import tweet fetching and sentiment prediction functions from main.py
 from main import fetch_tweets, predict_sentiment
 
+BASE_DIR = Path(__file__).resolve().parent
+TEMPLATE_DIR = str(BASE_DIR.parent / 'template')
+
 # create flask app instance and set static folder for templates
-app = Flask(__name__, static_folder='templates')
+app = Flask(__name__, static_folder=TEMPLATE_DIR, template_folder=TEMPLATE_DIR)
 
 
 # route to serve css file
 @app.route('/style.css')
 def serve_css():
     # read and return css file content
-    with open('templates/style.css', 'r') as f:
+    with open(os.path.join(TEMPLATE_DIR, 'style.css'), 'r') as f:
         return f.read(), 200, {'Content-Type': 'text/css'}
 
 
@@ -22,7 +26,7 @@ def serve_css():
 @app.route('/script.js')
 def serve_js():
     # read and return js file content
-    with open('templates/script.js', 'r') as f:
+    with open(os.path.join(TEMPLATE_DIR, 'script.js'), 'r') as f:
         return f.read(), 200, {'Content-Type': 'text/javascript'}
 
 
@@ -70,7 +74,8 @@ def analyze():
             'total_tweets': len(tweets),
             'emotion_counts': results['emotion_counts'],
             'emotion_percentages': results['emotion_percentages'],
-            'dominant': results['dominant_emotion']
+            'dominant': results['dominant_emotion'],
+            'individual_results': results.get('individual_results', [])
         })
 
     except Exception as e:

@@ -242,6 +242,29 @@ document.addEventListener('DOMContentLoaded', function () {
                         dominantSentimentEl.textContent =
                             'dominant emotion: ' + data.dominant.charAt(0).toUpperCase() + data.dominant.slice(1);
 
+                        // Render individual tweets
+                        const tweetsContainer = document.getElementById('tweetsContainer');
+                        if (tweetsContainer && data.individual_results) {
+                            tweetsContainer.innerHTML = ''; // clear previous
+                            
+                            data.individual_results.forEach(item => {
+                                const tweetDiv = document.createElement('div');
+                                tweetDiv.className = 'tweet-item';
+                                
+                                const emotion = item.predicted_emotion;
+                                const confidence = (item.confidence * 100).toFixed(1);
+                                
+                                tweetDiv.innerHTML = `
+                                    <div class="tweet-content">${item.original_text}</div>
+                                    <div class="tweet-meta">
+                                        <span class="tweet-emotion-tag tag-${emotion}">${emotion}</span>
+                                        <span class="tweet-confidence">${confidence}% match</span>
+                                    </div>
+                                `;
+                                tweetsContainer.appendChild(tweetDiv);
+                            });
+                        }
+
                         // add smooth transition effect
                         resultsBox.style.opacity = '0';
                         resultsBox.style.transform = 'translateY(20px)';

@@ -1,0 +1,13 @@
+{
+    "name": "twitter-sentiment-analysis",
+    "version": "1.0.0",
+    "description": "Tweet fetcher for Sentiment Analysis Project",
+    "main": "tweet_fetch.js",
+    "scripts": {
+        "start": "node tweet_fetch.js"
+    },
+    "dependencies": {
+        "franc": "^5.0.0",
+        "rettiwt-api": "latest"
+    }
+}

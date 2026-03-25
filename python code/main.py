@@ -1,4 +1,4 @@
-# import required libraries
+import sys
 import os
 import re
 import json
@@ -14,6 +14,14 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import requests
 
+# Add root directory to sys.path to allow importing from top-level modules
+root_dir = Path(__file__).resolve().parent.parent
+if str(root_dir) not in sys.path:
+    sys.path.append(str(root_dir))
+
+from inference_pipeline import EmotionInferencePipeline
+
+
 # download stopwords silently if not available
 nltk.download("stopwords", quiet=True)
 
@@ -27,19 +35,22 @@ logging.basicConfig(
     ]
 )
 
-# set base directory for accessing model files and scripts
-BASE_DIR = Path(__file__).resolve().parent
-
-# load trained sentiment analysis model and supporting objects
-model = pickle.load(open(BASE_DIR.parent / "model" / "trained_model.sav", "rb"))
-vectorizer = pickle.load(open(BASE_DIR.parent / "model" / "tfidf_vectorizer.sav", "rb"))
-encoder = pickle.load(open(BASE_DIR.parent / "model" / "label_encoder.sav", "rb"))
-
-# list of emotions used by the model
-EMOTIONS = ["joy", "sadness", "fear", "anger", "surprise", "neutral", "disgust", "shame"]
-
-# initialize stemmer for text preprocessing
+# initialize stemming for text preprocessing (legacy, but keeping if needed elsewhere)
 port_stem = PorterStemmer()
+
+# Initialize the new transformer pipeline
+# We set this as None and load it when needed or at startup
+_emotion_pipeline = None
+
+def get_emotion_pipeline():
+    global _emotion_pipeline
+    if _emotion_pipeline is None:
+        # Add root to path to ensure inference_pipeline is findable
+        root_dir = Path(__file__).resolve().parent.parent
+        if str(root_dir) not in sys.path:
+            sys.path.append(str(root_dir))
+        _emotion_pipeline = EmotionInferencePipeline()
+    return _emotion_pipeline
 
 
 # function to apply stemming and remove unwanted characters
@@ -64,12 +75,12 @@ def fetch_tweets(topic: str, count: int) -> list[str]:
         logging.info(f"fetching tweets for topic: {topic}")
 
         # define output path for node.js results
-        output_path = BASE_DIR / 'tweets.json'
+        output_path = root_dir / 'tweets.json'
         if output_path.exists():
             output_path.unlink()
 
         # define node.js script path
-        node_script = BASE_DIR / 'node' / 'tweet_fetch.js'
+        node_script = root_dir / 'node' / 'tweet_fetch.js'
         if not node_script.exists():
             raise FileNotFoundError(f"node script not found at {node_script}")
 
@@ -120,43 +131,19 @@ def predict_sentiment(tweet_texts: list[str]) -> dict:
     if not tweet_texts:
         raise ValueError("no tweets to analyze")
 
-    # preprocess tweet texts
-    processed = preprocess_text(pd.Series(tweet_texts))
-    if processed.empty:
-        raise ValueError("no valid tweets after preprocessing")
+    pipeline = get_emotion_pipeline()
+    results = pipeline.predict_batch(tweet_texts)
 
-    # vectorize tweets and predict emotions using the trained model
-    vectorized = vectorizer.transform(processed)
-    predictions = model.predict(vectorized)
-    predicted_emotions = encoder.inverse_transform(predictions)
+    if not results or not results["success"]:
+        raise ValueError("emotion analysis failed")
 
-    # calculate emotion counts and percentages
-    emotion_counts = {emotion: np.count_nonzero(predicted_emotions == emotion) for emotion in EMOTIONS}
-    total = len(predicted_emotions)
-    emotion_percentages = {emotion: (count / total) * 100 for emotion, count in emotion_counts.items()}
-
-    # find the dominant emotion
-    dominant_emotion = max(emotion_counts, key=emotion_counts.get)
-
-    # function to safely convert numpy types to native python types
-    def convert_numpy(obj):
-        if isinstance(obj, dict):
-            return {k: convert_numpy(v) for k, v in obj.items()}
-        elif isinstance(obj, list):
-            return [convert_numpy(v) for v in obj]
-        elif isinstance(obj, np.integer):
-            return int(obj)
-        elif isinstance(obj, np.floating):
-            return float(obj)
-        elif isinstance(obj, np.ndarray):
-            return obj.tolist()
-        else:
-            return obj
-
-    # construct final result and return
-    result = {
-        "emotion_counts": emotion_counts,
-        "emotion_percentages": emotion_percentages,
-        "dominant_emotion": dominant_emotion
+    # Map the results to the format expected by app.py
+    # app.py expects: emotion_counts, emotion_percentages, dominant_emotion (as 'dominant')
+    
+    return {
+        "emotion_counts": results["emotion_counts"],
+        "emotion_percentages": results["emotion_percentages"],
+        "dominant_emotion": results["dominant_emotion"],
+        "individual_results": results["predictions"] # Include the list of processed tweets
     }
-    return convert_numpy(result)
+

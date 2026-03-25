@@ -661,3 +661,99 @@ footer p {
 .centered-header {
     justify-content: center !important;
 }
+
+/* --- Latest Tweets Section --- */
+.latest-tweets-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: var(--primary);
+    text-transform: lowercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px var(--primary-glow);
+}
+
+.tweets-scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0 15px 15px 0; /* Added right and bottom padding */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Slightly more gap for better look */
+}
+
+/* Custom Scrollbar */
+.tweets-scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tweets-scroll-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.tweets-scroll-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+    border-radius: 10px;
+}
+
+/* Individual Tweet Card */
+.tweet-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    flex-shrink: 0; /* Prevent items from squashing */
+}
+
+.tweet-item:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(var(--primary-rgb), 0.3);
+    transform: translateX(5px);
+}
+
+.tweet-content {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.tweet-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.tweet-emotion-tag {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+/* Emotion specific colors for tags */
+.tag-anger { background: rgba(255, 45, 85, 0.15); color: #ff2d55; border: 1px solid rgba(255, 45, 85, 0.3); }
+.tag-joy { background: rgba(76, 255, 76, 0.15); color: #4cff4c; border: 1px solid rgba(76, 255, 76, 0.3); }
+.tag-sadness { background: rgba(0, 219, 222, 0.15); color: #00dbde; border: 1px solid rgba(0, 219, 222, 0.3); }
+.tag-fear { background: rgba(252, 0, 255, 0.15); color: #fc00ff; border: 1px solid rgba(252, 0, 255, 0.3); }
+.tag-surprise { background: rgba(255, 170, 0, 0.15); color: #ffaa00; border: 1px solid rgba(255, 170, 0, 0.3); }
+.tag-neutral { background: rgba(150, 150, 166, 0.15); color: #9696a6; border: 1px solid rgba(150, 150, 166, 0.3); }
+.tag-disgust { background: rgba(160, 32, 240, 0.15); color: #a020f0; border: 1px solid rgba(160, 32, 240, 0.3); }
+.tag-shame { background: rgba(119, 136, 153, 0.15); color: #778899; border: 1px solid rgba(119, 136, 153, 0.3); }
+
+.tweet-confidence {
+    color: var(--neutral);
+    font-style: italic;
+    opacity: 0.7;
+}

@@ -1,0 +1,1595 @@
+2026-03-23 13:03:45,041 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-23 13:03:45,041 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 13:03:45,070 - INFO -  * Restarting with stat
+2026-03-23 13:03:48,007 - WARNING -  * Debugger is active!
+2026-03-23 13:03:48,011 - INFO -  * Debugger PIN: 882-375-076
+2026-03-23 13:04:13,633 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:13] "GET / HTTP/1.1" 200 -
+2026-03-23 13:04:13,768 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:13] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 13:04:13,771 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:13] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 13:04:14,065 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-23 13:04:25,771 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:25] "GET / HTTP/1.1" 200 -
+2026-03-23 13:04:25,833 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:25] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 13:04:25,838 - INFO - 127.0.0.1 - - [23/Mar/2026 13:04:25] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 13:04:36,215 - INFO - fetching tweets for topic: trump
+2026-03-23 13:07:56,248 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "C:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 77, in fetch_tweets
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 1628, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['node', 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\node\\tweet_fetch.js', 'trump', '20']' timed out after 200 seconds
+2026-03-23 13:07:56,270 - INFO - 127.0.0.1 - - [23/Mar/2026 13:07:56] "POST /analyze HTTP/1.1" 200 -
+2026-03-23 13:25:54,900 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-23 13:25:54,901 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 13:25:54,903 - INFO -  * Restarting with stat
+2026-03-23 13:25:57,982 - WARNING -  * Debugger is active!
+2026-03-23 13:25:57,989 - INFO -  * Debugger PIN: 882-375-076
+2026-03-23 13:26:03,017 - INFO - 127.0.0.1 - - [23/Mar/2026 13:26:03] "GET / HTTP/1.1" 200 -
+2026-03-23 13:26:03,266 - INFO - 127.0.0.1 - - [23/Mar/2026 13:26:03] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 13:26:03,277 - INFO - 127.0.0.1 - - [23/Mar/2026 13:26:03] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 13:26:30,940 - INFO - fetching tweets for topic: iran
+2026-03-23 13:29:51,154 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "c:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 77, in fetch_tweets
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 1628, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['node', 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\node\\tweet_fetch.js', 'iran', '20']' timed out after 200 seconds
+2026-03-23 13:29:51,171 - INFO - 127.0.0.1 - - [23/Mar/2026 13:29:51] "POST /analyze HTTP/1.1" 200 -
+2026-03-23 13:33:26,162 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-23 13:33:26,163 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 13:33:26,166 - INFO -  * Restarting with stat
+2026-03-23 13:33:28,599 - WARNING -  * Debugger is active!
+2026-03-23 13:33:28,606 - INFO -  * Debugger PIN: 882-375-076
+2026-03-23 13:33:39,787 - INFO - 127.0.0.1 - - [23/Mar/2026 13:33:39] "GET / HTTP/1.1" 200 -
+2026-03-23 13:33:39,816 - INFO - 127.0.0.1 - - [23/Mar/2026 13:33:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 13:33:39,819 - INFO - 127.0.0.1 - - [23/Mar/2026 13:33:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 13:33:51,199 - INFO - fetching tweets for topic: modi
+2026-03-23 13:34:19,002 - ERROR - node.js failed with code 1
+command: ['node', 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\node\\tweet_fetch.js', 'modi', '20']
+output: 🚀 starting fetch for 'modi'...
+[Rettiwt-API] [2026-03-23T08:03:52.762Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:03:52.763Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:03:52.763Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:03:52.763Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:03:56.094Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:03:56.095Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:03:56.095Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:03:56.095Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:03:59.011Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:03:59.011Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:03:59.011Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:03:59.011Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:01.286Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:01.286Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:01.287Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:01.287Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:03.409Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:03.409Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:03.409Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:03.409Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:05.942Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:05.942Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:05.942Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:05.942Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:08.700Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:08.700Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:08.700Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:08.700Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:11.417Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:11.417Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:11.417Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:11.417Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:13.825Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:13.825Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:13.826Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:13.826Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:04:16.845Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["modi"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:04:16.845Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:04:16.845Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:04:16.845Z] [GET] {"target":"USER_CREDENTIAL"}
+
+error: ⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+⚠️ api key error (will try another on next call): Request failed with status code 401
+❌ too many consecutive api errors. stopping fetch.
+❌ too many consecutive api errors. stopping fetch.
+❌ no english tweets found
+
+2026-03-23 13:34:19,004 - INFO - 127.0.0.1 - - [23/Mar/2026 13:34:19] "POST /analyze HTTP/1.1" 200 -
+2026-03-23 14:06:00,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-23 14:06:00,619 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 14:06:00,621 - INFO -  * Restarting with stat
+2026-03-23 14:06:03,018 - WARNING -  * Debugger is active!
+2026-03-23 14:06:03,024 - INFO -  * Debugger PIN: 882-375-076
+2026-03-23 14:06:07,155 - INFO - 127.0.0.1 - - [23/Mar/2026 14:06:07] "GET / HTTP/1.1" 200 -
+2026-03-23 14:06:07,183 - INFO - 127.0.0.1 - - [23/Mar/2026 14:06:07] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 14:06:07,184 - INFO - 127.0.0.1 - - [23/Mar/2026 14:06:07] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 14:06:26,026 - INFO - fetching tweets for topic: tesla
+2026-03-23 14:06:39,046 - INFO - node.js output:
+🚀 starting fetch for 'tesla'...
+[Rettiwt-API] [2026-03-23T08:36:28.334Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["tesla"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:36:28.343Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:36:28.344Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:36:28.344Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:36:31.725Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["tesla"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T08:36:31.726Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:36:31.726Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:36:31.726Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:36:34.811Z] [DESERIALIZE] {"id":"2035997735766114632"}
+[Rettiwt-API] [2026-03-23T08:36:34.813Z] [DESERIALIZE] {"id":"2035997352709025828"}
+[Rettiwt-API] [2026-03-23T08:36:34.813Z] [DESERIALIZE] {"id":"2035997179735887991"}
+[Rettiwt-API] [2026-03-23T08:36:34.813Z] [DESERIALIZE] {"id":"2035996969337041129"}
+[Rettiwt-API] [2026-03-23T08:36:34.813Z] [DESERIALIZE] {"id":"2035994605406101658"}
+[Rettiwt-API] [2026-03-23T08:36:34.813Z] [DESERIALIZE] {"id":"2035992815319080969"}
+[Rettiwt-API] [2026-03-23T08:36:34.813Z] [DESERIALIZE] {"id":"2035992316725580037"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035991572358316302"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035990811700232669"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035989661202751695"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035989417777856647"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035989216870465690"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035988891065295102"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035988236091216340"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035988104012759437"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035987628080975954"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035987533683966310"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035987519985340917"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035986288176746762"}
+[Rettiwt-API] [2026-03-23T08:36:34.814Z] [DESERIALIZE] {"id":"2035985864313172406"}
+🔁 fetched 11/20 english tweets so far...
+[Rettiwt-API] [2026-03-23T08:36:35.339Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["tesla"],"maxResults":9}}}
+[Rettiwt-API] [2026-03-23T08:36:35.339Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T08:36:35.339Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T08:36:35.339Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T08:36:38.492Z] [DESERIALIZE] {"id":"2035997735766114632"}
+[Rettiwt-API] [2026-03-23T08:36:38.492Z] [DESERIALIZE] {"id":"2035997352709025828"}
+[Rettiwt-API] [2026-03-23T08:36:38.492Z] [DESERIALIZE] {"id":"2035997179735887991"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035996969337041129"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035994605406101658"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035992815319080969"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035992316725580037"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035991572358316302"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035990811700232669"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035989661202751695"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035989417777856647"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035989216870465690"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035988891065295102"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035988236091216340"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035988104012759437"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035987628080975954"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035987533683966310"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035987519985340917"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035986288176746762"}
+[Rettiwt-API] [2026-03-23T08:36:38.493Z] [DESERIALIZE] {"id":"2035985864313172406"}
+🔁 fetched 22/20 english tweets so far...
+✅ successfully fetched 22 english tweets
+
+2026-03-23 14:06:39,177 - INFO - 127.0.0.1 - - [23/Mar/2026 14:06:39] "POST /analyze HTTP/1.1" 200 -
+2026-03-23 15:27:37,352 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-23 15:27:37,353 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 15:27:37,355 - INFO -  * Restarting with stat
+2026-03-23 15:27:39,675 - WARNING -  * Debugger is active!
+2026-03-23 15:27:39,680 - INFO -  * Debugger PIN: 882-375-076
+2026-03-23 15:27:43,906 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:43] "GET / HTTP/1.1" 200 -
+2026-03-23 15:27:44,044 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:44] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 15:27:44,046 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:44] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 15:27:49,246 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:49] "GET / HTTP/1.1" 200 -
+2026-03-23 15:27:49,325 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:49] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 15:27:49,326 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:49] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 15:27:51,283 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:51] "GET / HTTP/1.1" 200 -
+2026-03-23 15:27:51,343 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:51] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 15:27:51,345 - INFO - 127.0.0.1 - - [23/Mar/2026 15:27:51] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 15:28:02,889 - INFO - 127.0.0.1 - - [23/Mar/2026 15:28:02] "GET / HTTP/1.1" 200 -
+2026-03-23 15:28:02,929 - INFO - 127.0.0.1 - - [23/Mar/2026 15:28:02] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 15:28:02,930 - INFO - 127.0.0.1 - - [23/Mar/2026 15:28:02] "GET /script.js HTTP/1.1" 200 -
+2026-03-23 15:28:09,982 - INFO - fetching tweets for topic: iran
+2026-03-23 15:28:28,730 - INFO - node.js output:
+🚀 starting fetch for 'iran'...
+[Rettiwt-API] [2026-03-23T09:58:12.621Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T09:58:12.633Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T09:58:12.633Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T09:58:12.633Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T09:58:15.910Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-23T09:58:15.910Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T09:58:15.910Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T09:58:15.910Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T09:58:19.812Z] [DESERIALIZE] {"id":"2036019627944542458"}
+[Rettiwt-API] [2026-03-23T09:58:19.814Z] [DESERIALIZE] {"id":"2036019590468169748"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019571270762987"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019555839905902"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019499166552305"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019494787613070"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019484549603664"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019482662183240"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019478715142542"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019474701144456"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019459899416703"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019458582462681"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019444900823287"}
+[Rettiwt-API] [2026-03-23T09:58:19.815Z] [DESERIALIZE] {"id":"2036019328215048413"}
+[Rettiwt-API] [2026-03-23T09:58:19.816Z] [DESERIALIZE] {"id":"2036019326696698308"}
+[Rettiwt-API] [2026-03-23T09:58:19.816Z] [DESERIALIZE] {"id":"2036019324360536296"}
+[Rettiwt-API] [2026-03-23T09:58:19.816Z] [DESERIALIZE] {"id":"2036019287371198871"}
+[Rettiwt-API] [2026-03-23T09:58:19.816Z] [DESERIALIZE] {"id":"2036019269503250752"}
+[Rettiwt-API] [2026-03-23T09:58:19.816Z] [DESERIALIZE] {"id":"2036019259151990802"}
+[Rettiwt-API] [2026-03-23T09:58:19.816Z] [DESERIALIZE] {"id":"2036019228210503760"}
+🔁 fetched 9/20 english tweets so far...
+[Rettiwt-API] [2026-03-23T09:58:20.353Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":11}}}
+[Rettiwt-API] [2026-03-23T09:58:20.353Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T09:58:20.353Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T09:58:20.353Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019694486901087"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019693765444024"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019686584778767"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019667589005686"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019627944542458"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019590468169748"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019571270762987"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019555839905902"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019499166552305"}
+[Rettiwt-API] [2026-03-23T09:58:23.846Z] [DESERIALIZE] {"id":"2036019494787613070"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019484549603664"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019482662183240"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019478715142542"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019474701144456"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019459899416703"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019458582462681"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019444900823287"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019328215048413"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019326696698308"}
+[Rettiwt-API] [2026-03-23T09:58:23.847Z] [DESERIALIZE] {"id":"2036019324360536296"}
+🔁 fetched 18/20 english tweets so far...
+[Rettiwt-API] [2026-03-23T09:58:24.370Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":2}}}
+[Rettiwt-API] [2026-03-23T09:58:24.370Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-23T09:58:24.370Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-23T09:58:24.370Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019714594308316"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019694486901087"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019686584778767"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019680012653005"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019667589005686"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019627944542458"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019590468169748"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019571270762987"}
+[Rettiwt-API] [2026-03-23T09:58:28.161Z] [DESERIALIZE] {"id":"2036019555839905902"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019499166552305"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019494787613070"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019484549603664"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019482662183240"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019478715142542"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019474701144456"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019459899416703"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019458582462681"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019444900823287"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019328215048413"}
+[Rettiwt-API] [2026-03-23T09:58:28.162Z] [DESERIALIZE] {"id":"2036019326696698308"}
+🔁 fetched 27/20 english tweets so far...
+✅ successfully fetched 27 english tweets
+
+2026-03-23 15:28:28,927 - INFO - 127.0.0.1 - - [23/Mar/2026 15:28:28] "POST /analyze HTTP/1.1" 200 -
+2026-03-23 15:29:54,146 - INFO - 127.0.0.1 - - [23/Mar/2026 15:29:54] "GET / HTTP/1.1" 200 -
+2026-03-23 15:29:54,197 - INFO - 127.0.0.1 - - [23/Mar/2026 15:29:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-23 15:29:54,199 - INFO - 127.0.0.1 - - [23/Mar/2026 15:29:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 14:26:38,419 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 14:26:38,419 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:26:38,421 - INFO -  * Restarting with stat
+2026-03-25 14:26:45,733 - WARNING -  * Debugger is active!
+2026-03-25 14:26:45,737 - INFO -  * Debugger PIN: 884-572-306
+2026-03-25 14:27:46,392 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 14:27:46,392 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:27:46,395 - INFO -  * Restarting with stat
+2026-03-25 14:27:51,465 - INFO - 127.0.0.1 - - [25/Mar/2026 14:27:51] "GET / HTTP/1.1" 200 -
+2026-03-25 14:27:51,562 - INFO - 127.0.0.1 - - [25/Mar/2026 14:27:51] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 14:27:51,564 - INFO - 127.0.0.1 - - [25/Mar/2026 14:27:51] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 14:27:52,195 - INFO - 127.0.0.1 - - [25/Mar/2026 14:27:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 14:28:03,144 - WARNING -  * Debugger is active!
+2026-03-25 14:28:03,158 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 14:28:15,270 - INFO - fetching tweets for topic: iran
+2026-03-25 14:28:15,270 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "C:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 78, in fetch_tweets
+    output_path = BASE_DIR.parent / 'tweets.json'
+                  ^^^^^^^^
+NameError: name 'BASE_DIR' is not defined
+2026-03-25 14:28:15,276 - INFO - 127.0.0.1 - - [25/Mar/2026 14:28:15] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 14:28:33,501 - INFO - fetching tweets for topic: trump
+2026-03-25 14:28:33,501 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "C:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 78, in fetch_tweets
+    output_path = BASE_DIR.parent / 'tweets.json'
+                  ^^^^^^^^
+NameError: name 'BASE_DIR' is not defined
+2026-03-25 14:28:33,503 - INFO - 127.0.0.1 - - [25/Mar/2026 14:28:33] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 14:32:42,519 - INFO - fetching tweets for topic: trump
+2026-03-25 14:32:42,519 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "C:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 78, in fetch_tweets
+    output_path = BASE_DIR.parent / 'tweets.json'
+                  ^^^^^^^^
+NameError: name 'BASE_DIR' is not defined
+2026-03-25 14:32:42,521 - INFO - 127.0.0.1 - - [25/Mar/2026 14:32:42] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 14:33:16,594 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 14:33:16,594 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:33:16,596 - INFO -  * Restarting with stat
+2026-03-25 14:33:20,702 - INFO - 127.0.0.1 - - [25/Mar/2026 14:33:20] "GET / HTTP/1.1" 200 -
+2026-03-25 14:33:20,803 - INFO - 127.0.0.1 - - [25/Mar/2026 14:33:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 14:33:20,805 - INFO - 127.0.0.1 - - [25/Mar/2026 14:33:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 14:33:30,449 - INFO - fetching tweets for topic: modi
+2026-03-25 14:33:30,450 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "C:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 78, in fetch_tweets
+    output_path = BASE_DIR.parent / 'tweets.json'
+                  ^^^^^^^^
+NameError: name 'BASE_DIR' is not defined
+2026-03-25 14:33:30,451 - INFO - 127.0.0.1 - - [25/Mar/2026 14:33:30] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 14:33:30,900 - WARNING -  * Debugger is active!
+2026-03-25 14:33:30,909 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 14:33:38,222 - INFO - fetching tweets for topic: modi
+2026-03-25 14:33:38,222 - ERROR - critical error in fetch_tweets:
+Traceback (most recent call last):
+  File "C:\Users\shanu\Desktop\sentiment project all folders\Twitter-X-Sentiment-Analysis\python code\main.py", line 78, in fetch_tweets
+    output_path = BASE_DIR.parent / 'tweets.json'
+                  ^^^^^^^^
+NameError: name 'BASE_DIR' is not defined
+2026-03-25 14:33:38,224 - INFO - 127.0.0.1 - - [25/Mar/2026 14:33:38] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 14:34:32,259 - INFO -  * Detected change in 'c:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\python code\\main.py', reloading
+2026-03-25 14:34:33,166 - INFO -  * Restarting with stat
+2026-03-25 14:34:35,154 - INFO -  * Detected change in 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\python code\\main.py', reloading
+2026-03-25 14:34:37,409 - INFO -  * Restarting with stat
+2026-03-25 14:34:46,897 - WARNING -  * Debugger is active!
+2026-03-25 14:34:46,906 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 14:34:56,925 - WARNING -  * Debugger is active!
+2026-03-25 14:34:56,931 - INFO -  * Debugger PIN: 884-572-306
+2026-03-25 14:34:56,945 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 14:34:56,945 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:34:56,950 - INFO -  * Restarting with stat
+2026-03-25 14:35:08,961 - WARNING -  * Debugger is active!
+2026-03-25 14:35:08,969 - INFO -  * Debugger PIN: 884-572-306
+2026-03-25 14:35:29,892 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 14:35:29,894 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:35:29,897 - INFO -  * Restarting with stat
+2026-03-25 14:35:39,094 - INFO - 127.0.0.1 - - [25/Mar/2026 14:35:39] "GET / HTTP/1.1" 200 -
+2026-03-25 14:35:39,238 - INFO - 127.0.0.1 - - [25/Mar/2026 14:35:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 14:35:39,239 - INFO - 127.0.0.1 - - [25/Mar/2026 14:35:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 14:35:43,699 - WARNING -  * Debugger is active!
+2026-03-25 14:35:43,710 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 14:35:46,350 - INFO - fetching tweets for topic: iran
+2026-03-25 14:36:10,842 - INFO - node.js output:
+🚀 starting fetch for 'iran'...
+[Rettiwt-API] [2026-03-25T09:05:51.029Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T09:05:51.031Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:05:51.032Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:05:51.032Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:05:54.853Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T09:05:54.853Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:05:54.853Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:05:54.853Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:05:57.111Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T09:05:57.111Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:05:57.111Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:05:57.112Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:06:00.946Z] [DESERIALIZE] {"id":"2036731279907967392"}
+[Rettiwt-API] [2026-03-25T09:06:00.947Z] [DESERIALIZE] {"id":"2036731238917066791"}
+[Rettiwt-API] [2026-03-25T09:06:00.947Z] [DESERIALIZE] {"id":"2036731238635962498"}
+[Rettiwt-API] [2026-03-25T09:06:00.947Z] [DESERIALIZE] {"id":"2036731186379379139"}
+[Rettiwt-API] [2026-03-25T09:06:00.947Z] [DESERIALIZE] {"id":"2036731186374910183"}
+[Rettiwt-API] [2026-03-25T09:06:00.947Z] [DESERIALIZE] {"id":"2036731163687915579"}
+[Rettiwt-API] [2026-03-25T09:06:00.948Z] [DESERIALIZE] {"id":"2036731160815157346"}
+[Rettiwt-API] [2026-03-25T09:06:00.948Z] [DESERIALIZE] {"id":"2036731151415427262"}
+[Rettiwt-API] [2026-03-25T09:06:00.948Z] [DESERIALIZE] {"id":"2036731143605895381"}
+[Rettiwt-API] [2026-03-25T09:06:00.948Z] [DESERIALIZE] {"id":"2036731136131453090"}
+[Rettiwt-API] [2026-03-25T09:06:00.948Z] [DESERIALIZE] {"id":"2036731126778085761"}
+[Rettiwt-API] [2026-03-25T09:06:00.948Z] [DESERIALIZE] {"id":"2036731126186713466"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731117446082752"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731107883057192"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731104485392576"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731088811205101"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731087590748355"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731069962035480"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731058302149058"}
+[Rettiwt-API] [2026-03-25T09:06:00.949Z] [DESERIALIZE] {"id":"2036731053054836895"}
+🔁 fetched 7/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T09:06:01.504Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":13}}}
+[Rettiwt-API] [2026-03-25T09:06:01.504Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:06:01.504Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:06:01.504Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:06:05.924Z] [DESERIALIZE] {"id":"2036731300145660060"}
+[Rettiwt-API] [2026-03-25T09:06:05.924Z] [DESERIALIZE] {"id":"2036731283401744873"}
+[Rettiwt-API] [2026-03-25T09:06:05.924Z] [DESERIALIZE] {"id":"2036731279907967392"}
+[Rettiwt-API] [2026-03-25T09:06:05.924Z] [DESERIALIZE] {"id":"2036731238917066791"}
+[Rettiwt-API] [2026-03-25T09:06:05.924Z] [DESERIALIZE] {"id":"2036731238635962498"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731186379379139"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731186374910183"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731163687915579"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731160815157346"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731151415427262"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731143605895381"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731136131453090"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731126778085761"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731126186713466"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731117446082752"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731107883057192"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731104485392576"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731088811205101"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731087590748355"}
+[Rettiwt-API] [2026-03-25T09:06:05.925Z] [DESERIALIZE] {"id":"2036731069962035480"}
+🔁 fetched 15/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T09:06:06.453Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":5}}}
+[Rettiwt-API] [2026-03-25T09:06:06.453Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:06:06.453Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:06:06.453Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731326821290429"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731326045548969"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731312602538072"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731300145660060"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731279907967392"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731238917066791"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731238635962498"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731186379379139"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731186374910183"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731163687915579"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731160815157346"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731151415427262"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731143605895381"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731136131453090"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731126778085761"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731126186713466"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731117446082752"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731107883057192"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731104485392576"}
+[Rettiwt-API] [2026-03-25T09:06:10.298Z] [DESERIALIZE] {"id":"2036731088811205101"}
+🔁 fetched 22/20 english tweets so far...
+✅ successfully fetched 22 english tweets
+
+2026-03-25 14:36:10,843 - ERROR - node.js errors:
+⚠️ api key error (will try another on next call): Request failed with status code 404
+
+2026-03-25 14:36:17,244 - INFO - 127.0.0.1 - - [25/Mar/2026 14:36:17] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 14:42:29,978 - INFO - 127.0.0.1 - - [25/Mar/2026 14:42:29] "GET / HTTP/1.1" 200 -
+2026-03-25 14:42:30,058 - INFO - 127.0.0.1 - - [25/Mar/2026 14:42:30] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 14:42:30,060 - INFO - 127.0.0.1 - - [25/Mar/2026 14:42:30] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 14:42:38,400 - INFO - fetching tweets for topic: dhurandhar
+2026-03-25 14:42:53,106 - INFO - node.js output:
+🚀 starting fetch for 'dhurandhar'...
+[Rettiwt-API] [2026-03-25T09:12:42.264Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T09:12:42.267Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:12:42.267Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:12:42.267Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:12:45.342Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T09:12:45.342Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:12:45.343Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:12:45.343Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:12:48.556Z] [DESERIALIZE] {"id":"2036732941343334549"}
+[Rettiwt-API] [2026-03-25T09:12:48.557Z] [DESERIALIZE] {"id":"2036732778717622481"}
+[Rettiwt-API] [2026-03-25T09:12:48.557Z] [DESERIALIZE] {"id":"2036732719519166509"}
+[Rettiwt-API] [2026-03-25T09:12:48.557Z] [DESERIALIZE] {"id":"2036732530909720803"}
+[Rettiwt-API] [2026-03-25T09:12:48.558Z] [DESERIALIZE] {"id":"2036732207348531688"}
+[Rettiwt-API] [2026-03-25T09:12:48.558Z] [DESERIALIZE] {"id":"2036731661103341658"}
+[Rettiwt-API] [2026-03-25T09:12:48.558Z] [DESERIALIZE] {"id":"2036731436225696115"}
+[Rettiwt-API] [2026-03-25T09:12:48.558Z] [DESERIALIZE] {"id":"2036731008389972388"}
+[Rettiwt-API] [2026-03-25T09:12:48.558Z] [DESERIALIZE] {"id":"2036730313632879074"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036729989526360408"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036729804482056284"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036729442299678742"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036729358849650785"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036729132525273239"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036728506093359530"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036728260546191645"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036728069948600333"}
+[Rettiwt-API] [2026-03-25T09:12:48.559Z] [DESERIALIZE] {"id":"2036727808345674023"}
+[Rettiwt-API] [2026-03-25T09:12:48.560Z] [DESERIALIZE] {"id":"2036727241644912738"}
+[Rettiwt-API] [2026-03-25T09:12:48.560Z] [DESERIALIZE] {"id":"2036727196333838804"}
+🔁 fetched 11/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T09:12:49.107Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":9}}}
+[Rettiwt-API] [2026-03-25T09:12:49.107Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T09:12:49.107Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T09:12:49.107Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T09:12:52.489Z] [DESERIALIZE] {"id":"2036732941343334549"}
+[Rettiwt-API] [2026-03-25T09:12:52.489Z] [DESERIALIZE] {"id":"2036732778717622481"}
+[Rettiwt-API] [2026-03-25T09:12:52.489Z] [DESERIALIZE] {"id":"2036732719519166509"}
+[Rettiwt-API] [2026-03-25T09:12:52.489Z] [DESERIALIZE] {"id":"2036732530909720803"}
+[Rettiwt-API] [2026-03-25T09:12:52.489Z] [DESERIALIZE] {"id":"2036732207348531688"}
+[Rettiwt-API] [2026-03-25T09:12:52.489Z] [DESERIALIZE] {"id":"2036731661103341658"}
+[Rettiwt-API] [2026-03-25T09:12:52.490Z] [DESERIALIZE] {"id":"2036731436225696115"}
+[Rettiwt-API] [2026-03-25T09:12:52.490Z] [DESERIALIZE] {"id":"2036731008389972388"}
+[Rettiwt-API] [2026-03-25T09:12:52.490Z] [DESERIALIZE] {"id":"2036730313632879074"}
+[Rettiwt-API] [2026-03-25T09:12:52.490Z] [DESERIALIZE] {"id":"2036729989526360408"}
+[Rettiwt-API] [2026-03-25T09:12:52.490Z] [DESERIALIZE] {"id":"2036729804482056284"}
+[Rettiwt-API] [2026-03-25T09:12:52.490Z] [DESERIALIZE] {"id":"2036729442299678742"}
+[Rettiwt-API] [2026-03-25T09:12:52.491Z] [DESERIALIZE] {"id":"2036729358849650785"}
+[Rettiwt-API] [2026-03-25T09:12:52.491Z] [DESERIALIZE] {"id":"2036729132525273239"}
+[Rettiwt-API] [2026-03-25T09:12:52.491Z] [DESERIALIZE] {"id":"2036728506093359530"}
+[Rettiwt-API] [2026-03-25T09:12:52.491Z] [DESERIALIZE] {"id":"2036728260546191645"}
+[Rettiwt-API] [2026-03-25T09:12:52.492Z] [DESERIALIZE] {"id":"2036728069948600333"}
+[Rettiwt-API] [2026-03-25T09:12:52.492Z] [DESERIALIZE] {"id":"2036727808345674023"}
+[Rettiwt-API] [2026-03-25T09:12:52.492Z] [DESERIALIZE] {"id":"2036727241644912738"}
+[Rettiwt-API] [2026-03-25T09:12:52.492Z] [DESERIALIZE] {"id":"2036727196333838804"}
+🔁 fetched 22/20 english tweets so far...
+✅ successfully fetched 22 english tweets
+
+2026-03-25 14:42:54,781 - INFO - 127.0.0.1 - - [25/Mar/2026 14:42:54] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 16:06:28,577 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 16:06:28,577 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:06:28,581 - INFO -  * Restarting with stat
+2026-03-25 16:06:40,756 - WARNING -  * Debugger is active!
+2026-03-25 16:06:40,770 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 16:07:00,515 - INFO - 127.0.0.1 - - [25/Mar/2026 16:07:00] "GET / HTTP/1.1" 200 -
+2026-03-25 16:07:00,628 - INFO - 127.0.0.1 - - [25/Mar/2026 16:07:00] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:07:00,648 - INFO - 127.0.0.1 - - [25/Mar/2026 16:07:00] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:07:10,000 - INFO - fetching tweets for topic: trump
+2026-03-25 16:07:26,836 - INFO - node.js output:
+🚀 starting fetch for 'trump'...
+[Rettiwt-API] [2026-03-25T10:37:14.217Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["trump"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T10:37:14.230Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:37:14.230Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:37:14.230Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:37:17.441Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["trump"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T10:37:17.441Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:37:17.441Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:37:17.441Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:37:21.156Z] [DESERIALIZE] {"id":"2036754130174435685"}
+[Rettiwt-API] [2026-03-25T10:37:21.158Z] [DESERIALIZE] {"id":"2036754126525141028"}
+[Rettiwt-API] [2026-03-25T10:37:21.158Z] [DESERIALIZE] {"id":"2036754121366110223"}
+[Rettiwt-API] [2026-03-25T10:37:21.159Z] [DESERIALIZE] {"id":"2036754057931448404"}
+[Rettiwt-API] [2026-03-25T10:37:21.159Z] [DESERIALIZE] {"id":"2036754011273998776"}
+[Rettiwt-API] [2026-03-25T10:37:21.159Z] [DESERIALIZE] {"id":"2036754001509933186"}
+[Rettiwt-API] [2026-03-25T10:37:21.159Z] [DESERIALIZE] {"id":"2036753960984604804"}
+[Rettiwt-API] [2026-03-25T10:37:21.159Z] [DESERIALIZE] {"id":"2036753939450962042"}
+[Rettiwt-API] [2026-03-25T10:37:21.159Z] [DESERIALIZE] {"id":"2036753706574643454"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753671967637754"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753510407274519"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753508062335371"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753467596001356"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753375635640340"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753315045003610"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753038652612926"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036753008420417868"}
+[Rettiwt-API] [2026-03-25T10:37:21.160Z] [DESERIALIZE] {"id":"2036752992335179933"}
+[Rettiwt-API] [2026-03-25T10:37:21.161Z] [DESERIALIZE] {"id":"2036752886491967980"}
+[Rettiwt-API] [2026-03-25T10:37:21.161Z] [DESERIALIZE] {"id":"2036752724956434614"}
+🔁 fetched 10/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T10:37:21.714Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["trump"],"maxResults":10}}}
+[Rettiwt-API] [2026-03-25T10:37:21.715Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:37:21.715Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:37:21.715Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754293676544275"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754130174435685"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754126525141028"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754121366110223"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754057931448404"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754011273998776"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036754001509933186"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753960984604804"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753939450962042"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753706574643454"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753671967637754"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753510407274519"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753508062335371"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753467596001356"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753375635640340"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753315045003610"}
+[Rettiwt-API] [2026-03-25T10:37:26.240Z] [DESERIALIZE] {"id":"2036753038652612926"}
+[Rettiwt-API] [2026-03-25T10:37:26.241Z] [DESERIALIZE] {"id":"2036753008420417868"}
+[Rettiwt-API] [2026-03-25T10:37:26.241Z] [DESERIALIZE] {"id":"2036752992335179933"}
+[Rettiwt-API] [2026-03-25T10:37:26.241Z] [DESERIALIZE] {"id":"2036752886491967980"}
+🔁 fetched 20/20 english tweets so far...
+✅ successfully fetched 20 english tweets
+
+2026-03-25 16:07:29,922 - INFO - 127.0.0.1 - - [25/Mar/2026 16:07:29] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 16:14:27,401 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 16:14:27,402 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:14:27,406 - INFO -  * Restarting with stat
+2026-03-25 16:14:33,148 - INFO - 127.0.0.1 - - [25/Mar/2026 16:14:33] "GET / HTTP/1.1" 200 -
+2026-03-25 16:14:33,239 - INFO - 127.0.0.1 - - [25/Mar/2026 16:14:33] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:14:33,244 - INFO - 127.0.0.1 - - [25/Mar/2026 16:14:33] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:14:47,289 - WARNING -  * Debugger is active!
+2026-03-25 16:14:47,305 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 16:15:07,369 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:07] "GET / HTTP/1.1" 200 -
+2026-03-25 16:15:07,454 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:07] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:15:07,460 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:07] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:15:09,240 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:09] "GET / HTTP/1.1" 200 -
+2026-03-25 16:15:09,288 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:09] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:15:09,292 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:09] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:15:10,124 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:10] "GET / HTTP/1.1" 200 -
+2026-03-25 16:15:10,175 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:15:10,177 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:15:10,844 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:10] "GET / HTTP/1.1" 200 -
+2026-03-25 16:15:10,917 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:15:10,924 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:15:16,250 - INFO - fetching tweets for topic: iran
+2026-03-25 16:15:35,067 - INFO - node.js output:
+🚀 starting fetch for 'iran'...
+[Rettiwt-API] [2026-03-25T10:45:20.298Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T10:45:20.300Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:45:20.300Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:45:20.301Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:45:23.032Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T10:45:23.032Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:45:23.032Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:45:23.032Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:45:26.946Z] [DESERIALIZE] {"id":"2036756299841470548"}
+[Rettiwt-API] [2026-03-25T10:45:26.947Z] [DESERIALIZE] {"id":"2036756290987286914"}
+[Rettiwt-API] [2026-03-25T10:45:26.947Z] [DESERIALIZE] {"id":"2036756290232311986"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756289343160379"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756278500815045"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756273153405015"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756257059856570"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756246276030587"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756226919522369"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756205448650976"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756204177985870"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756201892089884"}
+[Rettiwt-API] [2026-03-25T10:45:26.948Z] [DESERIALIZE] {"id":"2036756199798907247"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756192333041883"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756188193517824"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756185479569725"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756180664738116"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756155737710854"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756147089338690"}
+[Rettiwt-API] [2026-03-25T10:45:26.949Z] [DESERIALIZE] {"id":"2036756141477343440"}
+🔁 fetched 8/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T10:45:27.474Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":12}}}
+[Rettiwt-API] [2026-03-25T10:45:27.474Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:45:27.474Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:45:27.474Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756323342361001"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756312370098364"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756299841470548"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756295944966341"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756290987286914"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756290232311986"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756289343160379"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756278500815045"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756273153405015"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756257059856570"}
+[Rettiwt-API] [2026-03-25T10:45:31.095Z] [DESERIALIZE] {"id":"2036756246276030587"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756226919522369"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756205448650976"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756204177985870"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756201892089884"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756199798907247"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756192333041883"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756188193517824"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756185479569725"}
+[Rettiwt-API] [2026-03-25T10:45:31.096Z] [DESERIALIZE] {"id":"2036756180664738116"}
+🔁 fetched 16/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T10:45:31.637Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["iran"],"maxResults":4}}}
+[Rettiwt-API] [2026-03-25T10:45:31.637Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:45:31.638Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:45:31.638Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:45:34.489Z] [DESERIALIZE] {"id":"2036756323342361001"}
+[Rettiwt-API] [2026-03-25T10:45:34.489Z] [DESERIALIZE] {"id":"2036756320712294816"}
+[Rettiwt-API] [2026-03-25T10:45:34.489Z] [DESERIALIZE] {"id":"2036756312370098364"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756299841470548"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756295944966341"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756290987286914"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756290232311986"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756289343160379"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756278500815045"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756273153405015"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756257059856570"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756246276030587"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756226919522369"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756205448650976"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756204177985870"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756201892089884"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756199798907247"}
+[Rettiwt-API] [2026-03-25T10:45:34.490Z] [DESERIALIZE] {"id":"2036756192333041883"}
+[Rettiwt-API] [2026-03-25T10:45:34.491Z] [DESERIALIZE] {"id":"2036756188193517824"}
+[Rettiwt-API] [2026-03-25T10:45:34.491Z] [DESERIALIZE] {"id":"2036756185479569725"}
+🔁 fetched 24/20 english tweets so far...
+✅ successfully fetched 24 english tweets
+
+2026-03-25 16:15:36,955 - INFO - 127.0.0.1 - - [25/Mar/2026 16:15:36] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 16:18:24,423 - INFO - 127.0.0.1 - - [25/Mar/2026 16:18:24] "GET / HTTP/1.1" 200 -
+2026-03-25 16:18:24,519 - INFO - 127.0.0.1 - - [25/Mar/2026 16:18:24] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:18:24,525 - INFO - 127.0.0.1 - - [25/Mar/2026 16:18:24] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:19:39,457 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 16:19:39,457 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:19:39,459 - INFO -  * Restarting with stat
+2026-03-25 16:19:50,117 - INFO - 127.0.0.1 - - [25/Mar/2026 16:19:50] "GET / HTTP/1.1" 200 -
+2026-03-25 16:19:50,187 - INFO - 127.0.0.1 - - [25/Mar/2026 16:19:50] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:19:50,192 - INFO - 127.0.0.1 - - [25/Mar/2026 16:19:50] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:19:52,446 - WARNING -  * Debugger is active!
+2026-03-25 16:19:52,463 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 16:20:04,626 - INFO - fetching tweets for topic: dhurandhar
+2026-03-25 16:20:19,975 - INFO - node.js output:
+🚀 starting fetch for 'dhurandhar'...
+[Rettiwt-API] [2026-03-25T10:50:08.550Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T10:50:08.567Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:50:08.568Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:50:08.568Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:50:11.353Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T10:50:11.353Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:50:11.353Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:50:11.353Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:50:15.086Z] [DESERIALIZE] {"id":"2036757432920379899"}
+[Rettiwt-API] [2026-03-25T10:50:15.088Z] [DESERIALIZE] {"id":"2036757015679414678"}
+[Rettiwt-API] [2026-03-25T10:50:15.089Z] [DESERIALIZE] {"id":"2036756758283358258"}
+[Rettiwt-API] [2026-03-25T10:50:15.089Z] [DESERIALIZE] {"id":"2036756470289867228"}
+[Rettiwt-API] [2026-03-25T10:50:15.089Z] [DESERIALIZE] {"id":"2036756447682343204"}
+[Rettiwt-API] [2026-03-25T10:50:15.089Z] [DESERIALIZE] {"id":"2036756322247430454"}
+[Rettiwt-API] [2026-03-25T10:50:15.089Z] [DESERIALIZE] {"id":"2036756311044669599"}
+[Rettiwt-API] [2026-03-25T10:50:15.090Z] [DESERIALIZE] {"id":"2036756146208526652"}
+[Rettiwt-API] [2026-03-25T10:50:15.090Z] [DESERIALIZE] {"id":"2036754894779265378"}
+[Rettiwt-API] [2026-03-25T10:50:15.090Z] [DESERIALIZE] {"id":"2036754387180384311"}
+[Rettiwt-API] [2026-03-25T10:50:15.091Z] [DESERIALIZE] {"id":"2036754220045705518"}
+[Rettiwt-API] [2026-03-25T10:50:15.091Z] [DESERIALIZE] {"id":"2036754069218611685"}
+[Rettiwt-API] [2026-03-25T10:50:15.091Z] [DESERIALIZE] {"id":"2036754016416514093"}
+[Rettiwt-API] [2026-03-25T10:50:15.091Z] [DESERIALIZE] {"id":"2036753298070630793"}
+[Rettiwt-API] [2026-03-25T10:50:15.091Z] [DESERIALIZE] {"id":"2036753219414552706"}
+[Rettiwt-API] [2026-03-25T10:50:15.092Z] [DESERIALIZE] {"id":"2036753194081304702"}
+[Rettiwt-API] [2026-03-25T10:50:15.092Z] [DESERIALIZE] {"id":"2036752941173137749"}
+[Rettiwt-API] [2026-03-25T10:50:15.092Z] [DESERIALIZE] {"id":"2036752579741528533"}
+[Rettiwt-API] [2026-03-25T10:50:15.092Z] [DESERIALIZE] {"id":"2036752451760451969"}
+[Rettiwt-API] [2026-03-25T10:50:15.092Z] [DESERIALIZE] {"id":"2036752435893723169"}
+🔁 fetched 15/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T10:50:15.661Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":5}}}
+[Rettiwt-API] [2026-03-25T10:50:15.661Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T10:50:15.662Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T10:50:15.662Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T10:50:19.407Z] [DESERIALIZE] {"id":"2036757432920379899"}
+[Rettiwt-API] [2026-03-25T10:50:19.407Z] [DESERIALIZE] {"id":"2036757015679414678"}
+[Rettiwt-API] [2026-03-25T10:50:19.407Z] [DESERIALIZE] {"id":"2036756758283358258"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036756470289867228"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036756447682343204"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036756322247430454"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036756311044669599"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036756146208526652"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036754894779265378"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036754387180384311"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036754220045705518"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036754069218611685"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036754016416514093"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036753298070630793"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036753219414552706"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036753194081304702"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036752941173137749"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036752579741528533"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036752451760451969"}
+[Rettiwt-API] [2026-03-25T10:50:19.408Z] [DESERIALIZE] {"id":"2036752435893723169"}
+🔁 fetched 30/20 english tweets so far...
+✅ successfully fetched 30 english tweets
+
+2026-03-25 16:20:22,175 - INFO - 127.0.0.1 - - [25/Mar/2026 16:20:22] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 16:21:24,774 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:24] "GET / HTTP/1.1" 200 -
+2026-03-25 16:21:24,830 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:24] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:21:24,831 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:24] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:21:26,412 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:26] "GET / HTTP/1.1" 200 -
+2026-03-25 16:21:26,462 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:26] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:21:26,480 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:26] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:21:26,950 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:26] "GET / HTTP/1.1" 200 -
+2026-03-25 16:21:27,013 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:27] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:21:27,024 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:27] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:21:27,395 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:27] "GET / HTTP/1.1" 200 -
+2026-03-25 16:21:27,448 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:27] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:21:27,450 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:27] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:21:28,163 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:28] "GET / HTTP/1.1" 200 -
+2026-03-25 16:21:28,225 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:28] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:21:28,229 - INFO - 127.0.0.1 - - [25/Mar/2026 16:21:28] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:23:24,658 - INFO - 127.0.0.1 - - [25/Mar/2026 16:23:24] "GET / HTTP/1.1" 200 -
+2026-03-25 16:23:24,711 - INFO - 127.0.0.1 - - [25/Mar/2026 16:23:24] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:23:24,719 - INFO - 127.0.0.1 - - [25/Mar/2026 16:23:24] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:23:25,151 - INFO - 127.0.0.1 - - [25/Mar/2026 16:23:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 16:25:26,081 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 16:25:26,082 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:25:26,085 - INFO -  * Restarting with stat
+2026-03-25 16:25:33,333 - INFO - 127.0.0.1 - - [25/Mar/2026 16:25:33] "GET / HTTP/1.1" 200 -
+2026-03-25 16:25:33,405 - INFO - 127.0.0.1 - - [25/Mar/2026 16:25:33] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:25:33,411 - INFO - 127.0.0.1 - - [25/Mar/2026 16:25:33] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:25:46,241 - WARNING -  * Debugger is active!
+2026-03-25 16:25:46,251 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 16:26:00,825 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:00] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:02,073 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:02] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:02,119 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:02] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:04,520 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 16:26:08,554 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:08] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:08,641 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:08] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:08,645 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:08] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:10,894 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:10] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:10,985 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:10,988 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:11,894 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:11] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:11,966 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:11] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:11,967 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:11] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:12,712 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:12] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:12,780 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:12] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:12,799 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:12] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:13,613 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:13] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:13,673 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:13] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:13,676 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:13] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:14,646 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:14] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:15,040 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:15] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:15,042 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:15] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:16,306 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:16] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:16,386 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:16] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:16,387 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:16] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:17,017 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:17] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:17,071 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:17,089 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:17,834 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:17] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:18,044 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:18] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:18,078 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:18] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 16:26:18,451 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:18] "GET / HTTP/1.1" 200 -
+2026-03-25 16:26:18,511 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:18] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 16:26:18,593 - INFO - 127.0.0.1 - - [25/Mar/2026 16:26:18] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:10,230 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 22:35:10,230 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 22:35:10,234 - INFO -  * Restarting with stat
+2026-03-25 22:35:17,314 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:17,522 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:17,553 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:23,691 - WARNING -  * Debugger is active!
+2026-03-25 22:35:23,700 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 22:35:27,183 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 22:35:33,918 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:33] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:34,015 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:34] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:34,022 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:34] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:37,485 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:37] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:37,537 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:37] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:37,539 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:37] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:38,540 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:38] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:39,039 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:39,043 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:44,878 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:44] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:44,940 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:44] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:44,948 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:44] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:45,639 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:45] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:45,687 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:45] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:45,689 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:45] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:45,966 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:45] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:46,039 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:46,040 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:46,304 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:46,355 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:46,358 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:46,470 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:46,521 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:46,525 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:46,778 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:46,835 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:46,840 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:46] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:47,116 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:47] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:47,208 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:47] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:47,211 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:47] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:47,453 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:47] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:47,528 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:47] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:47,537 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:47] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:48,150 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:48,199 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:48,208 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:48,493 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:48,650 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:48,655 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:35:48,813 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET / HTTP/1.1" 200 -
+2026-03-25 22:35:48,889 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:35:48,890 - INFO - 127.0.0.1 - - [25/Mar/2026 22:35:48] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:33,771 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 22:37:33,772 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 22:37:33,777 - INFO -  * Restarting with stat
+2026-03-25 22:37:37,199 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:37] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:37,265 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:37] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:37,269 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:37] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:50,055 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:50] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:50,121 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:50] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:50,124 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:50] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:50,697 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:50] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:50,736 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:50] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:50,740 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:50] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:51,194 - WARNING -  * Debugger is active!
+2026-03-25 22:37:51,207 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 22:37:52,274 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:52] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:52,331 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:52] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:52,335 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:52] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:54,018 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:54,074 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:54,084 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:54,523 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:54,579 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:54,585 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:54,901 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:54,958 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:54,960 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:37:59,518 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:59] "GET / HTTP/1.1" 200 -
+2026-03-25 22:37:59,576 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:59] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:37:59,580 - INFO - 127.0.0.1 - - [25/Mar/2026 22:37:59] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:01,090 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:01,147 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:01,148 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:01,443 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:01,492 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:01,493 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:01,773 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:01,829 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:01,833 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:01] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:02,073 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:02,122 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:02,125 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:02,275 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:02,455 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:02,458 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:02,486 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:02,556 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:02,559 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:02,684 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:02,737 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:02,738 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:02] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:03,324 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:03] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:03,407 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:03] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:03,408 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:03] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:03,697 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:03] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:03,829 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:03] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:03,834 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:03] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:04,535 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:04] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:04,576 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:04] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:04,578 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:04] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:05,526 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:05] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:05,579 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:05] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:05,586 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:05] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:06,194 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:06] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:06,251 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:06] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:06,254 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:06] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:06,839 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:06] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:06,895 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:06] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:06,897 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:06] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:07,421 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:07] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:07,471 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:07] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:07,477 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:07] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:07,678 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:07] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:07,736 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:07] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:07,739 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:07] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:08,177 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:08] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:08,228 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:08] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:08,235 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:08] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:08,696 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:08] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:08,820 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:08] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:08,829 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:08] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:09,429 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:09] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:09,484 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:09] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:09,488 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:09] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:09,967 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:09] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:10,026 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:10,029 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:10,417 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:10,461 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:10,464 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:10,921 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:10,973 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:10,975 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:12,027 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:12,048 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:12,100 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:12,102 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:12,531 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:12,589 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:12,594 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:12] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:13,037 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:13] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:13,093 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:13] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:13,094 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:13] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:13,721 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:13] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:13,776 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:13] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:13,781 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:13] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:14,208 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:14] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:14,270 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:14] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:14,275 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:14] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:14,635 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:14] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:14,724 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:14] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:14,724 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:14] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:16,517 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:16] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:16,571 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:16] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:16,573 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:16] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:17,056 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:17,114 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:17,115 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:17,219 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:17,272 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:17,277 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:17,376 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:17,432 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:17,434 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:17,527 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:17,724 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:17,762 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:17,793 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:17,937 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:17,972 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:18,228 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:18,228 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:18,312 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:18,359 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:18,890 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:18,943 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:18,949 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:18] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,042 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,107 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,111 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,182 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,296 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,363 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,366 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,417 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,418 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,448 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,527 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,531 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,590 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,649 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,651 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,740 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,792 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,797 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:19,886 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:19,941 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:19,943 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:19] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,017 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:20,086 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:20,094 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,176 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:20,240 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:20,247 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,318 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:20,444 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:20,446 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,463 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:20,550 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:20,552 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,613 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:20,678 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,680 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:20,746 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:20,803 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:20,805 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:20,925 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:20] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,081 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,094 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,097 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,177 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,179 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,196 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,276 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,279 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,337 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,396 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,400 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,487 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,550 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,551 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,630 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,708 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,711 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,777 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,855 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,857 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:21,920 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:21,989 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:21,991 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:21] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:22,069 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:22] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:22,124 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:22] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:22,127 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:22] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:22,205 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:22] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:22,268 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:22] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:22,269 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:22] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:23,330 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:23] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:23,375 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:23] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:23,378 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:23] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:24,350 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:24] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:24,571 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:24] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:24,573 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:24] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:25,456 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:25] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:25,502 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:25] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:25,506 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:25] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:26,088 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:26,139 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:26,145 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:26,765 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:26,835 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:26,838 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:26,929 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:26] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:27,001 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:27] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:27,006 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:27] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:27,776 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:27] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:28,002 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:28] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:28,004 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:28] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:28,620 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:28] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:28,675 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:28] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:28,678 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:28] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:29,389 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:29] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:29,439 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:29] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:29,442 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:29] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:30,050 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:30] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:30,094 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:30] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:30,099 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:30] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:30,637 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:30] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:30,690 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:30] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:30,692 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:30] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:31,252 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:31] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:31,313 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:31] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:31,314 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:31] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:31,859 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:31] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:31,916 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:31] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:31,922 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:31] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:32,285 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:32] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:32,538 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:32] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:32,541 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:32] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:33,054 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:33] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:33,111 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:33] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:33,113 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:33] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:33,338 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:33] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:33,384 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:33] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:33,391 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:33] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:34,184 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:34] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:34,225 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:34] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:34,229 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:34] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:34,898 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:34] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:34,942 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:34] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:34,944 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:34] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:35,490 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:35] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:35,536 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:35] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:35,537 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:35] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:36,159 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:36] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:36,223 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:36] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:36,226 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:36] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:36,705 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:36] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:36,768 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:36] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:36,771 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:36] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:37,375 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:37] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:37,428 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:37] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:37,434 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:37] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:37,917 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:37] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:37,975 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:37] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:37,977 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:37] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:38,305 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:38,347 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:38,349 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:38,523 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:38,567 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:38,568 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:38,730 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:38,779 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:38,782 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:38,918 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:38,976 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:38,979 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:38] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:39,023 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:39,131 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:39,134 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:39,208 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:39,260 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:39,262 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:39,459 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:39,508 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:39,510 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:39,714 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:39,760 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:39,762 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:39,887 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:39,941 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:39,942 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:39] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,073 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:40,129 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,130 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:40,245 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:40,368 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:40,369 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,386 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:40,477 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:40,480 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,544 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:40,603 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:40,606 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,690 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:40,758 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:40,763 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,851 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:40,923 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:40,927 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:40,984 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:40] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:41,037 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:41] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:41,040 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:41] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:41,132 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:41] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:41,186 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:41] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:41,192 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:41] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:49,858 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:49] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:49,916 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:49] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:49,920 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:49] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:50,357 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 22:38:53,993 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:53] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:54,019 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:54,019 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:54,153 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:54,172 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:54,179 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:54,320 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:54,350 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:54,362 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:54,475 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:54,506 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:54,518 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:54,632 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:54,659 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:54,668 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:38:54,791 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET / HTTP/1.1" 200 -
+2026-03-25 22:38:54,815 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:38:54,817 - INFO - 127.0.0.1 - - [25/Mar/2026 22:38:54] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:39:10,460 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:10] "GET / HTTP/1.1" 200 -
+2026-03-25 22:39:10,548 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:10] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:39:10,560 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:10] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:39:10,791 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 22:39:17,489 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:17] "GET / HTTP/1.1" 200 -
+2026-03-25 22:39:17,553 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:17] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:39:17,555 - INFO - 127.0.0.1 - - [25/Mar/2026 22:39:17] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:39:47,671 - INFO - fetching tweets for topic: dhurandhar
+2026-03-25 22:40:51,539 - INFO - node.js output:
+🚀 starting fetch for 'dhurandhar'...
+[Rettiwt-API] [2026-03-25T17:10:37.913Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:10:37.929Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:10:37.930Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:10:37.930Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:10:41.915Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:10:41.915Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:10:41.916Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:10:41.916Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:10:46.318Z] [DESERIALIZE] {"id":"2036852944172441691"}
+[Rettiwt-API] [2026-03-25T17:10:46.321Z] [DESERIALIZE] {"id":"2036852657525326076"}
+[Rettiwt-API] [2026-03-25T17:10:46.321Z] [DESERIALIZE] {"id":"2036852617155142123"}
+[Rettiwt-API] [2026-03-25T17:10:46.321Z] [DESERIALIZE] {"id":"2036852533654917402"}
+[Rettiwt-API] [2026-03-25T17:10:46.321Z] [DESERIALIZE] {"id":"2036852138291445792"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036851558554755243"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036850931393060999"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036850444283318419"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036850131061137703"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036850076438716515"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036849990753243599"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036849562258989354"}
+[Rettiwt-API] [2026-03-25T17:10:46.322Z] [DESERIALIZE] {"id":"2036849325553443312"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036848978965541120"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036848291628122503"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036848210065658252"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036848193519178017"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036847927159906612"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036847054094574064"}
+[Rettiwt-API] [2026-03-25T17:10:46.323Z] [DESERIALIZE] {"id":"2036846995651125423"}
+🔁 fetched 11/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T17:10:46.882Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":9}}}
+[Rettiwt-API] [2026-03-25T17:10:46.882Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:10:46.882Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:10:46.882Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:10:50.902Z] [DESERIALIZE] {"id":"2036852944172441691"}
+[Rettiwt-API] [2026-03-25T17:10:50.902Z] [DESERIALIZE] {"id":"2036852657525326076"}
+[Rettiwt-API] [2026-03-25T17:10:50.903Z] [DESERIALIZE] {"id":"2036852617155142123"}
+[Rettiwt-API] [2026-03-25T17:10:50.903Z] [DESERIALIZE] {"id":"2036852533654917402"}
+[Rettiwt-API] [2026-03-25T17:10:50.904Z] [DESERIALIZE] {"id":"2036852138291445792"}
+[Rettiwt-API] [2026-03-25T17:10:50.904Z] [DESERIALIZE] {"id":"2036851558554755243"}
+[Rettiwt-API] [2026-03-25T17:10:50.905Z] [DESERIALIZE] {"id":"2036850931393060999"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036850444283318419"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036850131061137703"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036850076438716515"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036849990753243599"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036849562258989354"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036849325553443312"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036848978965541120"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036848291628122503"}
+[Rettiwt-API] [2026-03-25T17:10:50.906Z] [DESERIALIZE] {"id":"2036848210065658252"}
+[Rettiwt-API] [2026-03-25T17:10:50.907Z] [DESERIALIZE] {"id":"2036848193519178017"}
+[Rettiwt-API] [2026-03-25T17:10:50.908Z] [DESERIALIZE] {"id":"2036847927159906612"}
+[Rettiwt-API] [2026-03-25T17:10:50.909Z] [DESERIALIZE] {"id":"2036847054094574064"}
+[Rettiwt-API] [2026-03-25T17:10:50.909Z] [DESERIALIZE] {"id":"2036846995651125423"}
+🔁 fetched 22/20 english tweets so far...
+✅ successfully fetched 22 english tweets
+
+2026-03-25 22:40:56,298 - INFO - 127.0.0.1 - - [25/Mar/2026 22:40:56] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 22:42:29,875 - INFO - 127.0.0.1 - - [25/Mar/2026 22:42:29] "GET / HTTP/1.1" 200 -
+2026-03-25 22:42:29,927 - INFO - 127.0.0.1 - - [25/Mar/2026 22:42:29] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:42:29,934 - INFO - 127.0.0.1 - - [25/Mar/2026 22:42:29] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 22:42:38,777 - INFO - fetching tweets for topic: dhurandhar
+2026-03-25 22:42:55,765 - INFO - node.js output:
+🚀 starting fetch for 'dhurandhar'...
+[Rettiwt-API] [2026-03-25T17:12:42.849Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:12:42.869Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:12:42.869Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:12:42.869Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:12:46.294Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:12:46.294Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:12:46.294Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:12:46.294Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:12:50.379Z] [DESERIALIZE] {"id":"2036853398805635497"}
+[Rettiwt-API] [2026-03-25T17:12:50.383Z] [DESERIALIZE] {"id":"2036853304165359913"}
+[Rettiwt-API] [2026-03-25T17:12:50.383Z] [DESERIALIZE] {"id":"2036852944172441691"}
+[Rettiwt-API] [2026-03-25T17:12:50.385Z] [DESERIALIZE] {"id":"2036852657525326076"}
+[Rettiwt-API] [2026-03-25T17:12:50.385Z] [DESERIALIZE] {"id":"2036852617155142123"}
+[Rettiwt-API] [2026-03-25T17:12:50.385Z] [DESERIALIZE] {"id":"2036852533654917402"}
+[Rettiwt-API] [2026-03-25T17:12:50.386Z] [DESERIALIZE] {"id":"2036852138291445792"}
+[Rettiwt-API] [2026-03-25T17:12:50.386Z] [DESERIALIZE] {"id":"2036851558554755243"}
+[Rettiwt-API] [2026-03-25T17:12:50.386Z] [DESERIALIZE] {"id":"2036850931393060999"}
+[Rettiwt-API] [2026-03-25T17:12:50.386Z] [DESERIALIZE] {"id":"2036850444283318419"}
+[Rettiwt-API] [2026-03-25T17:12:50.388Z] [DESERIALIZE] {"id":"2036850131061137703"}
+[Rettiwt-API] [2026-03-25T17:12:50.388Z] [DESERIALIZE] {"id":"2036850076438716515"}
+[Rettiwt-API] [2026-03-25T17:12:50.389Z] [DESERIALIZE] {"id":"2036849990753243599"}
+[Rettiwt-API] [2026-03-25T17:12:50.389Z] [DESERIALIZE] {"id":"2036849562258989354"}
+[Rettiwt-API] [2026-03-25T17:12:50.389Z] [DESERIALIZE] {"id":"2036849325553443312"}
+[Rettiwt-API] [2026-03-25T17:12:50.389Z] [DESERIALIZE] {"id":"2036848978965541120"}
+[Rettiwt-API] [2026-03-25T17:12:50.389Z] [DESERIALIZE] {"id":"2036848291628122503"}
+[Rettiwt-API] [2026-03-25T17:12:50.389Z] [DESERIALIZE] {"id":"2036848210065658252"}
+[Rettiwt-API] [2026-03-25T17:12:50.390Z] [DESERIALIZE] {"id":"2036848193519178017"}
+[Rettiwt-API] [2026-03-25T17:12:50.390Z] [DESERIALIZE] {"id":"2036847927159906612"}
+🔁 fetched 12/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T17:12:50.976Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["dhurandhar"],"maxResults":8}}}
+[Rettiwt-API] [2026-03-25T17:12:50.976Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:12:50.976Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:12:50.976Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:12:55.167Z] [DESERIALIZE] {"id":"2036853398805635497"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036853304165359913"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036852944172441691"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036852657525326076"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036852617155142123"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036852533654917402"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036852138291445792"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036851558554755243"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036850931393060999"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036850444283318419"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036850131061137703"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036850076438716515"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036849990753243599"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036849562258989354"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036849325553443312"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036848978965541120"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036848291628122503"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036848210065658252"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036848193519178017"}
+[Rettiwt-API] [2026-03-25T17:12:55.168Z] [DESERIALIZE] {"id":"2036847927159906612"}
+🔁 fetched 24/20 english tweets so far...
+✅ successfully fetched 24 english tweets
+
+2026-03-25 22:42:58,453 - INFO - 127.0.0.1 - - [25/Mar/2026 22:42:58] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 22:56:43,570 - INFO -  * Detected change in 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\python code\\main.py', reloading
+2026-03-25 22:56:47,189 - INFO -  * Detected change in 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\python code\\main.py', reloading
+2026-03-25 22:56:48,357 - INFO -  * Detected change in 'C:\\Users\\shanu\\Desktop\\sentiment project all folders\\Twitter-X-Sentiment-Analysis\\python code\\main.py', reloading
+2026-03-25 22:56:50,063 - INFO -  * Restarting with stat
+2026-03-25 22:57:04,606 - WARNING -  * Debugger is active!
+2026-03-25 22:57:04,616 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 22:59:58,711 - INFO - 127.0.0.1 - - [25/Mar/2026 22:59:58] "GET / HTTP/1.1" 200 -
+2026-03-25 22:59:58,842 - INFO - 127.0.0.1 - - [25/Mar/2026 22:59:58] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 22:59:58,852 - INFO - 127.0.0.1 - - [25/Mar/2026 22:59:58] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 23:01:01,076 - INFO - 127.0.0.1 - - [25/Mar/2026 23:01:01] "GET / HTTP/1.1" 200 -
+2026-03-25 23:01:01,098 - INFO - 127.0.0.1 - - [25/Mar/2026 23:01:01] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 23:01:01,100 - INFO - 127.0.0.1 - - [25/Mar/2026 23:01:01] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 23:01:21,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 23:01:21,708 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 23:01:21,709 - INFO -  * Restarting with stat
+2026-03-25 23:01:28,831 - WARNING -  * Debugger is active!
+2026-03-25 23:01:28,833 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 23:03:01,441 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:01] "GET / HTTP/1.1" 200 -
+2026-03-25 23:03:01,534 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:01] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 23:03:01,542 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:01] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 23:03:09,177 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:09] "GET / HTTP/1.1" 200 -
+2026-03-25 23:03:09,441 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:09] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 23:03:09,444 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:09] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 23:03:28,354 - INFO - fetching tweets for topic: israel
+2026-03-25 23:03:42,353 - INFO - node.js output:
+🚀 starting fetch for 'israel'...
+[Rettiwt-API] [2026-03-25T17:33:31.654Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["israel"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:33:31.655Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:33:31.655Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:33:31.655Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:33:34.654Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["israel"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:33:34.655Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:33:34.655Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:33:34.655Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:33:38.421Z] [DESERIALIZE] {"id":"2036859028802855149"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858818781417656"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858769280233836"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858643904422179"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858530553041280"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858473984733199"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858441717993484"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858424319783362"}
+[Rettiwt-API] [2026-03-25T17:33:38.422Z] [DESERIALIZE] {"id":"2036858368053436931"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858363858837633"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858321261781437"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858316257976504"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858307181261284"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858239288066055"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858207310930095"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858198204788958"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858173739720983"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858149798633605"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858080940490941"}
+[Rettiwt-API] [2026-03-25T17:33:38.423Z] [DESERIALIZE] {"id":"2036858070882517433"}
+🔁 fetched 13/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T17:33:38.963Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["israel"],"maxResults":7}}}
+[Rettiwt-API] [2026-03-25T17:33:38.963Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:33:38.963Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:33:38.963Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036859028802855149"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858818781417656"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858769280233836"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858643904422179"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858530553041280"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858473984733199"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858441717993484"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858424319783362"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858368053436931"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858363858837633"}
+[Rettiwt-API] [2026-03-25T17:33:41.787Z] [DESERIALIZE] {"id":"2036858321261781437"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858316257976504"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858307181261284"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858239288066055"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858207310930095"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858198204788958"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858173739720983"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858149798633605"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858080940490941"}
+[Rettiwt-API] [2026-03-25T17:33:41.788Z] [DESERIALIZE] {"id":"2036858070882517433"}
+🔁 fetched 26/20 english tweets so far...
+✅ successfully fetched 26 english tweets
+
+2026-03-25 23:03:43,126 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:03:43,152 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/j-hartmann/emotion-english-distilroberta-base/0e1cd914e3d46199ed785853e12b57304e04178b/config.json "HTTP/1.1 200 OK"
+2026-03-25 23:03:43,449 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:03:43,449 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-25 23:03:43,474 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/j-hartmann/emotion-english-distilroberta-base/0e1cd914e3d46199ed785853e12b57304e04178b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-25 23:03:43,736 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-25 23:03:44,002 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-25 23:03:44,614 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:03:44,639 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/j-hartmann/emotion-english-distilroberta-base/0e1cd914e3d46199ed785853e12b57304e04178b/config.json "HTTP/1.1 200 OK"
+2026-03-25 23:03:45,245 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-25 23:03:45,493 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base "HTTP/1.1 200 OK"
+2026-03-25 23:03:45,776 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/main "HTTP/1.1 200 OK"
+2026-03-25 23:03:45,833 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:03:45,863 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/config.json "HTTP/1.1 200 OK"
+2026-03-25 23:03:46,037 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/main?p=1&limit=50 "HTTP/1.1 200 OK"
+2026-03-25 23:03:46,140 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-25 23:03:46,323 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-25 23:03:46,404 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-25 23:03:46,576 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/refs%2Fpr%2F3017 "HTTP/1.1 200 OK"
+2026-03-25 23:03:46,652 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-25 23:03:46,854 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/refs%2Fpr%2F3017?p=1&limit=50 "HTTP/1.1 200 OK"
+2026-03-25 23:03:46,905 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-25 23:03:47,117 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/refs%2Fpr%2F3017/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-25 23:03:47,146 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:03:47,171 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/vocab.json "HTTP/1.1 200 OK"
+2026-03-25 23:03:47,363 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/refs%2Fpr%2F3017/model.safetensors "HTTP/1.1 302 Found"
+2026-03-25 23:03:48,840 - INFO - 127.0.0.1 - - [25/Mar/2026 23:03:48] "POST /analyze HTTP/1.1" 200 -
+2026-03-25 23:08:11,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-25 23:08:11,109 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 23:08:11,111 - INFO -  * Restarting with stat
+2026-03-25 23:08:19,789 - WARNING -  * Debugger is active!
+2026-03-25 23:08:19,795 - INFO -  * Debugger PIN: 882-375-076
+2026-03-25 23:08:19,983 - INFO - 127.0.0.1 - - [25/Mar/2026 23:08:19] "GET / HTTP/1.1" 200 -
+2026-03-25 23:08:20,064 - INFO - 127.0.0.1 - - [25/Mar/2026 23:08:20] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 23:08:20,067 - INFO - 127.0.0.1 - - [25/Mar/2026 23:08:20] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 23:08:25,013 - INFO - 127.0.0.1 - - [25/Mar/2026 23:08:25] "GET / HTTP/1.1" 200 -
+2026-03-25 23:08:25,092 - INFO - 127.0.0.1 - - [25/Mar/2026 23:08:25] "GET /style.css HTTP/1.1" 200 -
+2026-03-25 23:08:25,099 - INFO - 127.0.0.1 - - [25/Mar/2026 23:08:25] "GET /script.js HTTP/1.1" 200 -
+2026-03-25 23:08:38,600 - INFO - fetching tweets for topic: pakistan
+2026-03-25 23:08:55,340 - INFO - node.js output:
+🚀 starting fetch for 'pakistan'...
+[Rettiwt-API] [2026-03-25T17:38:41.669Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"keywords":["pakistan"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:38:41.684Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:38:41.684Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:38:41.684Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:38:44.930Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["pakistan"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:38:44.931Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:38:44.931Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:38:44.931Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:38:47.543Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["pakistan"],"maxResults":20}}}
+[Rettiwt-API] [2026-03-25T17:38:47.543Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:38:47.543Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:38:47.543Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:38:51.067Z] [DESERIALIZE] {"id":"2036860297550692433"}
+[Rettiwt-API] [2026-03-25T17:38:51.069Z] [DESERIALIZE] {"id":"2036860234254475688"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036860221222773092"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036860147579097452"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036860120966074831"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036859778388120013"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036859379514040447"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036859067524604065"}
+[Rettiwt-API] [2026-03-25T17:38:51.070Z] [DESERIALIZE] {"id":"2036858818198421764"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036858602917670993"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036858589218824369"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036858563038240867"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036858104168534173"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036858072522776965"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036857830574051702"}
+[Rettiwt-API] [2026-03-25T17:38:51.071Z] [DESERIALIZE] {"id":"2036857817077072286"}
+[Rettiwt-API] [2026-03-25T17:38:51.072Z] [DESERIALIZE] {"id":"2036857620573917335"}
+[Rettiwt-API] [2026-03-25T17:38:51.072Z] [DESERIALIZE] {"id":"2036857547450184168"}
+[Rettiwt-API] [2026-03-25T17:38:51.072Z] [DESERIALIZE] {"id":"2036857408128245958"}
+[Rettiwt-API] [2026-03-25T17:38:51.072Z] [DESERIALIZE] {"id":"2036857393402044574"}
+🔁 fetched 12/20 english tweets so far...
+[Rettiwt-API] [2026-03-25T17:38:51.617Z] [REQUEST] {"resource":"TWEET_SEARCH","args":{"filter":{"hashtags":["pakistan"],"maxResults":8}}}
+[Rettiwt-API] [2026-03-25T17:38:51.617Z] [AUTHORIZATION] {"authenticated":true}
+[Rettiwt-API] [2026-03-25T17:38:51.617Z] [VALIDATE] {"target":"FETCH_ARGS"}
+[Rettiwt-API] [2026-03-25T17:38:51.617Z] [GET] {"target":"USER_CREDENTIAL"}
+[Rettiwt-API] [2026-03-25T17:38:54.753Z] [DESERIALIZE] {"id":"2036860297550692433"}
+[Rettiwt-API] [2026-03-25T17:38:54.753Z] [DESERIALIZE] {"id":"2036860234254475688"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036860221222773092"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036860147579097452"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036860120966074831"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036859778388120013"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036859379514040447"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036859067524604065"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036858818198421764"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036858602917670993"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036858589218824369"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036858563038240867"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036858104168534173"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036858072522776965"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036857830574051702"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036857817077072286"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036857620573917335"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036857547450184168"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036857408128245958"}
+[Rettiwt-API] [2026-03-25T17:38:54.754Z] [DESERIALIZE] {"id":"2036857393402044574"}
+🔁 fetched 24/20 english tweets so far...
+✅ successfully fetched 24 english tweets
+
+2026-03-25 23:08:55,342 - ERROR - node.js errors:
+⚠️ api key error (will try another on next call): Request failed with status code 404
+
+2026-03-25 23:08:56,048 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:08:56,069 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/j-hartmann/emotion-english-distilroberta-base/0e1cd914e3d46199ed785853e12b57304e04178b/config.json "HTTP/1.1 200 OK"
+2026-03-25 23:08:56,410 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:08:56,431 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/j-hartmann/emotion-english-distilroberta-base/0e1cd914e3d46199ed785853e12b57304e04178b/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-25 23:08:56,742 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-25 23:08:57,019 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-25 23:08:57,822 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:08:57,823 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-25 23:08:57,843 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/j-hartmann/emotion-english-distilroberta-base/0e1cd914e3d46199ed785853e12b57304e04178b/config.json "HTTP/1.1 200 OK"
+2026-03-25 23:08:58,284 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-25 23:08:58,542 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base "HTTP/1.1 200 OK"
+2026-03-25 23:08:58,680 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:08:58,701 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/config.json "HTTP/1.1 200 OK"
+2026-03-25 23:08:58,798 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/main "HTTP/1.1 200 OK"
+2026-03-25 23:08:58,945 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-25 23:08:59,052 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/main?p=1&limit=50 "HTTP/1.1 200 OK"
+2026-03-25 23:08:59,195 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-25 23:08:59,323 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-25 23:08:59,435 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-25 23:08:59,587 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/refs%2Fpr%2F3017 "HTTP/1.1 200 OK"
+2026-03-25 23:08:59,700 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-25 23:08:59,861 - INFO - HTTP Request: GET https://huggingface.co/api/models/j-hartmann/emotion-english-distilroberta-base/commits/refs%2Fpr%2F3017?p=1&limit=50 "HTTP/1.1 200 OK"
+2026-03-25 23:08:59,940 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-25 23:08:59,963 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/vocab.json "HTTP/1.1 200 OK"
+2026-03-25 23:09:00,117 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/refs%2Fpr%2F3017/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-25 23:09:00,375 - INFO - HTTP Request: HEAD https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/resolve/refs%2Fpr%2F3017/model.safetensors "HTTP/1.1 302 Found"
+2026-03-25 23:09:02,181 - INFO - 127.0.0.1 - - [25/Mar/2026 23:09:02] "POST /analyze HTTP/1.1" 200 -
