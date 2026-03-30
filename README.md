@@ -5,7 +5,7 @@ This project analyzes recent tweets for a given topic and visualizes the distrib
 
 
 ## 🎥 Demo Video
-[▶ Watch the demo](./.assets/video.mp4)
+[▶ Watch the demo](./assets/video.mp4)
 
 
 
