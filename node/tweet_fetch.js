@@ -24,10 +24,10 @@ async function fetchTweets(topic, totalCount) {
     try {
         console.log(`🚀 starting fetch for '${topic}'...`);
         const outputPath = path.join(__dirname, '..', 'tweets.json');
-        
+
         const allTweets = [];
         const seenTexts = new Set();
-        
+
         // clean hashtag
         const hashtag = topic.replace(/\s+/g, '').replace('#', '');
 
@@ -57,15 +57,15 @@ async function fetchTweets(topic, totalCount) {
                         ...filter,
                         maxResults: fetchSize
                     });
-                    
+
                     if (!result || !result.list || result.list.length === 0) break;
 
                     for (const tweet of result.list) {
                         const text = tweet.fullText || '';
-                        
+
                         // Reliability: Use API lang if available, fallback to franc for safety
                         const isEnglish = (tweet.lang === 'en') || (text.length > 20 && franc(text) === 'eng');
-                        
+
                         if (isEnglish && !seenTexts.has(text) && allTweets.length < totalCount) {
                             allTweets.push({ text: text });
                             seenTexts.add(text);
@@ -74,7 +74,7 @@ async function fetchTweets(topic, totalCount) {
 
                     console.log(`🔁 fetched ${allTweets.length}/${totalCount} english tweets so far...`);
                     consecutiveErrors = 0;
-                    
+
                     if (allTweets.length >= totalCount) break;
 
                     await new Promise(r => setTimeout(r, 500));
